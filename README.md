@@ -56,5 +56,7 @@ We have provided the data in tabular format with two columns. Column 1 contains 
   </tr>
 </table>
 
-## :sparkles: Results
+## :sparkles: Results "LLMs for Intents"
 We conducted some preliminary analysis under two settings: (1) zero-shot intent classification (2) few-shot intent classification. In both settings, we curated prompts to accomplish the task. Under few-shot setting, we compared **standard** vs **chain-of-thought (CoT)** prompting. The results are summarized below:
+
+![Results](/images/ZeroshotGPT4.pdf)
