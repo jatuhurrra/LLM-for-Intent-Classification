@@ -89,7 +89,7 @@ We conducted some preliminary analysis under two settings: (1) zero-shot intent 
 
 ![Results](/images/ZeroshotGPT4.png)
 
-We can deduce that LLMs are capable of zero-shot intent classificaiton.
+We can deduce that LLMs are capable of zero-shot intent classificaiton. With more advanced prompting techniques, we can signifcicantly improve the accuracy on predicting the intent of any texts. 
 
 ## Citation
 Please cite as follows
