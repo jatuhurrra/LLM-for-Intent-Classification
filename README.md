@@ -6,6 +6,13 @@ By introducing a new dataset of 8,453 sentences across 6 distinct intent classes
 First of all, we demonstrated that LLMs can indeed perform intent classification tasks through prompting. This aligns with the current trend which aims to exploit the power of in-context learning in LLMs, without the need for for additional fine-tuning. 
 
 Secondly, to test our hypothesis, we introduced a unique dataset that was used to further explore and analyze zero-shot intent classification, providing a valuable resource for the research community.
+### 🤖 🤖    Human-Robot Interaction
+We envision a scenario in which the human and the robot engage in discussion over a wide range of topics. For example:
+
+![Results](/images/ICexampleChat.png)
+
+From the above illustration, we can deduce that the phrase `Cochinita Pibil for sure!` is related to the `intent` called `food` because the human is answering the question `what's your favorite cuisine?` 
+
 ## :card_file_box: The Dataset
 In this dataset, we set out to defer from the conventional norm in which intent classification datasets are constructed.
 For each sentence in the dataset, only a label which identifies the intent label to which the sentence belongs is included. 
@@ -56,7 +63,36 @@ We have provided the data in tabular format with two columns. Column 1 contains 
   </tr>
 </table>
 
-## :sparkles: Results "LLMs for Intents"
+## :mechanical_arm: The Prompt
+This is an example of one of the prompts which we used.
+```
+I want to perform intent classification.
+That is, given a sentence, what is the intent label for that sentence.
+
+This is a list of all the Intent Labels
+Label 1: pet
+Label 2: food
+Label 3: job
+Label 4: hobby
+Label 5: sport
+Label 6: drink
+...............
+
+Target Text: A Scotch egg consists of a soft or hard-boiled egg wrapped
+in sausage, meat, coated in bread crumbs  and baked or deep-fried.
+
+Which Label matches the intent expressed in the Target Text?
+```
+The prompt above facilitated our **zero-shot** intent classification analysis.
+## :sparkles: Evaluation
 We conducted some preliminary analysis under two settings: (1) zero-shot intent classification (2) few-shot intent classification. In both settings, we curated prompts to accomplish the task. Under few-shot setting, we compared **standard** vs **chain-of-thought (CoT)** prompting. The results are summarized below:
 
-![Results](/images/ZeroshotGPT4.pdf)
+![Results](/images/ZeroshotGPT4.png)
+
+We can deduce that LLMs are capable of zero-shot intent classificaiton.
+
+## Citation
+Please cite as follows
+```
+coming soon...
+```
