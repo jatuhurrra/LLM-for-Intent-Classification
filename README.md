@@ -66,12 +66,12 @@ We have provided the data in tabular format with two columns. Column 1 contains 
 ## :mechanical_arm: The Prompts are shown below.
 This is an example of one of the prompts which we used.
 ```
-Coming soon...
+Under construction...
 ```
 The prompt above facilitated our **zero-shot** intent classification analysis.
 ## :sparkles: Evaluation
 ```
-Coming soon...
+Under construction...
 ```
 <!-- 
 We conducted some preliminary analysis under two settings: (1) zero-shot intent classification (2) few-shot intent classification. In both settings, we curated prompts to accomplish the task. Under few-shot setting, we compared **standard** vs **chain-of-thought (CoT)** prompting. The results are summarized below:
@@ -85,5 +85,5 @@ We can deduce that LLMs are capable of zero-shot intent classificaiton. With mor
 ## Citation
 Please cite as follows
 ```
-coming soon...
+Under construction...
 ```
