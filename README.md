@@ -70,8 +70,12 @@ Coming soon...
 ```
 The prompt above facilitated our **zero-shot** intent classification analysis.
 ## :sparkles: Evaluation
+```
+Coming soon...
+```
+<!-- 
 We conducted some preliminary analysis under two settings: (1) zero-shot intent classification (2) few-shot intent classification. In both settings, we curated prompts to accomplish the task. Under few-shot setting, we compared **standard** vs **chain-of-thought (CoT)** prompting. The results are summarized below:
-
+-->
 <!-- 
 ![Results](/images/ZeroshotGPT4.png)
 
