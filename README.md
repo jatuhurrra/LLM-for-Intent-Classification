@@ -63,33 +63,20 @@ We have provided the data in tabular format with two columns. Column 1 contains 
   </tr>
 </table>
 
-## :mechanical_arm: The Prompt
+## :mechanical_arm: The Prompts are shown below.
 This is an example of one of the prompts which we used.
 ```
-I want to perform intent classification.
-That is, given a sentence, what is the intent label for that sentence.
-
-This is a list of all the Intent Labels
-Label 1: pet
-Label 2: food
-Label 3: job
-Label 4: hobby
-Label 5: sport
-Label 6: drink
-...............
-
-Target Text: A Scotch egg consists of a soft or hard-boiled egg wrapped
-in sausage, meat, coated in bread crumbs  and baked or deep-fried.
-
-Which Label matches the intent expressed in the Target Text?
+Coming soon...
 ```
 The prompt above facilitated our **zero-shot** intent classification analysis.
 ## :sparkles: Evaluation
 We conducted some preliminary analysis under two settings: (1) zero-shot intent classification (2) few-shot intent classification. In both settings, we curated prompts to accomplish the task. Under few-shot setting, we compared **standard** vs **chain-of-thought (CoT)** prompting. The results are summarized below:
 
+<!-- 
 ![Results](/images/ZeroshotGPT4.png)
 
 We can deduce that LLMs are capable of zero-shot intent classificaiton. With more advanced prompting techniques, we can signifcicantly improve the accuracy on predicting the intent of any texts. 
+-->
 
 ## Citation
 Please cite as follows
