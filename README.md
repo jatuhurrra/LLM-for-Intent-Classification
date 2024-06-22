@@ -72,82 +72,463 @@ The prompt above facilitated our **zero-shot** intent classification analysis.
 ## :sparkles: Evaluation
 We conducted experiments with data sizes per intent class of 200, 500, and all available data. Moreover, we used the three models: Gemma, Claude-3-Opus, and GPT-4-turbo.
 
-<table style="border-collapse: collapse; width: 100%;">
-  <caption style="caption-side: top; text-align: center; color: violet; font-weight: bold; margin-bottom: 10px;">Evaluation results for standard prompting in En, Jp, Sw, Ur</caption>
+🚧 **Currently under construction....** 🚧
+
+<table>
+  <caption>
+    <b>1. Standard Prompting results for English (En), Japanese (Jp), Swahili (Sw), Urdu (Ur). </b>
+  </caption>
   <thead>
     <tr>
-      <th style="border: 1px solid black;"></th>
-      <th style="border: 1px solid black;" colspan="4">200 samples</th>
-      <th style="border: 1px solid black;" colspan="4">500 samples</th>
-      <th style="border: 1px solid black;" colspan="4">All Data</th>
+      <th></th>
+      <th colspan="4">200 samples</th>
+      <th colspan="4">500 samples</th>
+      <th colspan="4">All Data</th>
     </tr>
     <tr>
-      <th style="border: 1px solid black;"></th>
-      <th style="border: 1px solid black;">En</th>
-      <th style="border: 1px solid black;">Jp</th>
-      <th style="border: 1px solid black;">Sw</th>
-      <th style="border: 1px solid black;">Ur</th>
-      <th style="border: 1px solid black;">En</th>
-      <th style="border: 1px solid black;">Jp</th>
-      <th style="border: 1px solid black;">Sw</th>
-      <th style="border: 1px solid black;">Ur</th>
-      <th style="border: 1px solid black;">En</th>
-      <th style="border: 1px solid black;">Jp</th>
-      <th style="border: 1px solid black;">Sw</th>
-      <th style="border: 1px solid black;">Ur</th>
+      <th></th>
+      <th>En</th>
+      <th>Jp</th>
+      <th>Sw</th>
+      <th>Ur</th>
+      <th>En</th>
+      <th>Jp</th>
+      <th>Sw</th>
+      <th>Ur</th>
+      <th>En</th>
+      <th>Jp</th>
+      <th>Sw</th>
+      <th>Ur</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="border: 1px solid black;">Gemma</td>
-      <td style="border: 1px solid black;">59</td>
-      <td style="border: 1px solid black;">44</td>
-      <td style="border: 1px solid black;">17</td>
-      <td style="border: 1px solid black;">18</td>
-      <td style="border: 1px solid black;">92</td>
-      <td style="border: 1px solid black;">95</td>
-      <td style="border: 1px solid black;">94</td>
-      <td style="border: 1px solid black;">91</td>
-      <td style="border: 1px solid black;">91</td>
-      <td style="border: 1px solid black;">87</td>
-      <td style="border: 1px solid black;">49</td>
-      <td style="border: 1px solid black;">81</td>
+      <td>Gemma</td>
+      <td>59</td>
+      <td>44</td>
+      <td>17</td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
     </tr>
     <tr>
-      <td style="border: 1px solid black;">Claude 3 Opus</td>
-      <td style="border: 1px solid black;">100</td>
-      <td style="border: 1px solid black;">100</td>
-      <td style="border: 1px solid black;">98</td>
-      <td style="border: 1px solid black;">99</td>
-      <td style="border: 1px solid black;">96</td>
-      <td style="border: 1px solid black;">59</td>
-      <td style="border: 1px solid black;">74</td>
-      <td style="border: 1px solid black;">100</td>
-      <td style="border: 1px solid black;">86</td>
-      <td style="border: 1px solid black;">44</td>
-      <td style="border: 1px solid black;">59</td>
-      <td style="border: 1px solid black;">92</td>
+      <td>Claude 3 Opus</td>
+      <td>100</td>
+      <td>100</td>
+      <td>98</td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
     </tr>
     <tr>
-      <td style="border: 1px solid black;">GPT 4 Turbo</td>
-      <td style="border: 1px solid black;">100</td>
-      <td style="border: 1px solid black;">100</td>
-      <td style="border: 1px solid black;">100</td>
-      <td style="border: 1px solid black;">100</td>
-      <td style="border: 1px solid black;">95</td>
-      <td style="border: 1px solid black;">92</td>
-      <td style="border: 1px solid black;">85</td>
-      <td style="border: 1px solid black;">99</td>
-      <td style="border: 1px solid black;">97</td>
-      <td style="border: 1px solid black;">94</td>
-      <td style="border: 1px solid black;">99</td>
-      <td style="border: 1px solid black;">99</td>
+      <td>GPT 4 Turbo</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
     </tr>
   </tbody>
 </table>
-```
-Under construction...
-```
+
+<table>
+  <caption>
+    <b>2. Few-shot Prompting (Wei et al.) results for En, Jp, Sw, Ur. </b>
+  </caption>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">200 samples</th>
+      <th colspan="4">500 samples</th>
+      <th colspan="4">All Data</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>En</th>
+      <th>Jp</th>
+      <th>Sw</th>
+      <th>Ur</th>
+      <th>En</th>
+      <th>Jp</th>
+      <th>Sw</th>
+      <th>Ur</th>
+      <th>En</th>
+      <th>Jp</th>
+      <th>Sw</th>
+      <th>Ur</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gemma</td>
+      <td>59</td>
+      <td>44</td>
+      <td>17</td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+    </tr>
+    <tr>
+      <td>Claude 3 Opus</td>
+      <td>100</td>
+      <td>100</td>
+      <td>98</td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+    </tr>
+    <tr>
+      <td>GPT 4 Turbo</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <caption>
+    <b>3. Zero-shot Prompting (Kojima et al.) results for En, Jp, Sw, Ur. </b>
+  </caption>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">200 samples</th>
+      <th colspan="4">500 samples</th>
+      <th colspan="4">All Data</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>En</th>
+      <th>Jp</th>
+      <th>Sw</th>
+      <th>Ur</th>
+      <th>En</th>
+      <th>Jp</th>
+      <th>Sw</th>
+      <th>Ur</th>
+      <th>En</th>
+      <th>Jp</th>
+      <th>Sw</th>
+      <th>Ur</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gemma</td>
+      <td>59</td>
+      <td>44</td>
+      <td>17</td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+    </tr>
+    <tr>
+      <td>Claude 3 Opus</td>
+      <td>100</td>
+      <td>100</td>
+      <td>98</td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+    </tr>
+    <tr>
+      <td>GPT 4 Turbo</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <caption>
+    <b>4. Expert-general Prompting results for En, Jp, Sw, Ur. </b>
+  </caption>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">200 samples</th>
+      <th colspan="4">500 samples</th>
+      <th colspan="4">All Data</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>En</th>
+      <th>Jp</th>
+      <th>Sw</th>
+      <th>Ur</th>
+      <th>En</th>
+      <th>Jp</th>
+      <th>Sw</th>
+      <th>Ur</th>
+      <th>En</th>
+      <th>Jp</th>
+      <th>Sw</th>
+      <th>Ur</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gemma</td>
+      <td>59</td>
+      <td>44</td>
+      <td>17</td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+    </tr>
+    <tr>
+      <td>Claude 3 Opus</td>
+      <td>100</td>
+      <td>100</td>
+      <td>98</td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+    </tr>
+    <tr>
+      <td>GPT 4 Turbo</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <caption>
+    <b>5. Expert-specific Prompting results for En, Jp, Sw, Ur. </b>
+  </caption>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">200 samples</th>
+      <th colspan="4">500 samples</th>
+      <th colspan="4">All Data</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>En</th>
+      <th>Jp</th>
+      <th>Sw</th>
+      <th>Ur</th>
+      <th>En</th>
+      <th>Jp</th>
+      <th>Sw</th>
+      <th>Ur</th>
+      <th>En</th>
+      <th>Jp</th>
+      <th>Sw</th>
+      <th>Ur</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gemma</td>
+      <td>59</td>
+      <td>44</td>
+      <td>17</td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+    </tr>
+    <tr>
+      <td>Claude 3 Opus</td>
+      <td>100</td>
+      <td>100</td>
+      <td>98</td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+    </tr>
+    <tr>
+      <td>GPT 4 Turbo</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <caption>
+    <b>6. Multi-persona Prompting results for En, Jp, Sw, Ur. </b>
+  </caption>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">200 samples</th>
+      <th colspan="4">500 samples</th>
+      <th colspan="4">All Data</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>En</th>
+      <th>Jp</th>
+      <th>Sw</th>
+      <th>Ur</th>
+      <th>En</th>
+      <th>Jp</th>
+      <th>Sw</th>
+      <th>Ur</th>
+      <th>En</th>
+      <th>Jp</th>
+      <th>Sw</th>
+      <th>Ur</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gemma</td>
+      <td>59</td>
+      <td>44</td>
+      <td>17</td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+    </tr>
+    <tr>
+      <td>Claude 3 Opus</td>
+      <td>100</td>
+      <td>100</td>
+      <td>98</td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+    </tr>
+    <tr>
+      <td>GPT 4 Turbo</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+      <td> -- </td>
+    </tr>
+  </tbody>
+</table>
 
 <!-- 
 We conducted some preliminary analysis under two settings: (1) zero-shot intent classification (2) few-shot intent classification. In both settings, we curated prompts to accomplish the task. Under few-shot setting, we compared **standard** vs **chain-of-thought (CoT)** prompting. The results are summarized below:
@@ -155,7 +536,7 @@ We conducted some preliminary analysis under two settings: (1) zero-shot intent 
 <!-- 
 ![Results](/images/ZeroshotGPT4.png)
 
-We can deduce that LLMs are capable of zero-shot intent classificaiton. With more advanced prompting techniques, we can signifcicantly improve the accuracy on predicting the intent of any texts. 
+We can deduce that LLMs are capable of zero-shot intent classification. With more advanced prompting techniques, we can significantly improve the accuracy of predicting the intent of any text. 
 -->
 
 ## Citation
