@@ -70,9 +70,85 @@ Under construction...
 ```
 The prompt above facilitated our **zero-shot** intent classification analysis.
 ## :sparkles: Evaluation
+We conducted experiments with data sizes per intent class of 200, 500, and all available data. Moreover, we used the three models: Gemma, Claude-3-Opus, and GPT-4-turbo.
+
+<table style="border-collapse: collapse; width: 100%;">
+  <caption style="caption-side: top; text-align: center; color: violet; font-weight: bold; margin-bottom: 10px;">Evaluation results for standard prompting in En, Jp, Sw, Ur</caption>
+  <thead>
+    <tr>
+      <th style="border: 1px solid black;"></th>
+      <th style="border: 1px solid black;" colspan="4">200 samples</th>
+      <th style="border: 1px solid black;" colspan="4">500 samples</th>
+      <th style="border: 1px solid black;" colspan="4">All Data</th>
+    </tr>
+    <tr>
+      <th style="border: 1px solid black;"></th>
+      <th style="border: 1px solid black;">En</th>
+      <th style="border: 1px solid black;">Jp</th>
+      <th style="border: 1px solid black;">Sw</th>
+      <th style="border: 1px solid black;">Ur</th>
+      <th style="border: 1px solid black;">En</th>
+      <th style="border: 1px solid black;">Jp</th>
+      <th style="border: 1px solid black;">Sw</th>
+      <th style="border: 1px solid black;">Ur</th>
+      <th style="border: 1px solid black;">En</th>
+      <th style="border: 1px solid black;">Jp</th>
+      <th style="border: 1px solid black;">Sw</th>
+      <th style="border: 1px solid black;">Ur</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid black;">Gemma</td>
+      <td style="border: 1px solid black;">59</td>
+      <td style="border: 1px solid black;">44</td>
+      <td style="border: 1px solid black;">17</td>
+      <td style="border: 1px solid black;">18</td>
+      <td style="border: 1px solid black;">92</td>
+      <td style="border: 1px solid black;">95</td>
+      <td style="border: 1px solid black;">94</td>
+      <td style="border: 1px solid black;">91</td>
+      <td style="border: 1px solid black;">91</td>
+      <td style="border: 1px solid black;">87</td>
+      <td style="border: 1px solid black;">49</td>
+      <td style="border: 1px solid black;">81</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black;">Claude 3 Opus</td>
+      <td style="border: 1px solid black;">100</td>
+      <td style="border: 1px solid black;">100</td>
+      <td style="border: 1px solid black;">98</td>
+      <td style="border: 1px solid black;">99</td>
+      <td style="border: 1px solid black;">96</td>
+      <td style="border: 1px solid black;">59</td>
+      <td style="border: 1px solid black;">74</td>
+      <td style="border: 1px solid black;">100</td>
+      <td style="border: 1px solid black;">86</td>
+      <td style="border: 1px solid black;">44</td>
+      <td style="border: 1px solid black;">59</td>
+      <td style="border: 1px solid black;">92</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black;">GPT 4 Turbo</td>
+      <td style="border: 1px solid black;">100</td>
+      <td style="border: 1px solid black;">100</td>
+      <td style="border: 1px solid black;">100</td>
+      <td style="border: 1px solid black;">100</td>
+      <td style="border: 1px solid black;">95</td>
+      <td style="border: 1px solid black;">92</td>
+      <td style="border: 1px solid black;">85</td>
+      <td style="border: 1px solid black;">99</td>
+      <td style="border: 1px solid black;">97</td>
+      <td style="border: 1px solid black;">94</td>
+      <td style="border: 1px solid black;">99</td>
+      <td style="border: 1px solid black;">99</td>
+    </tr>
+  </tbody>
+</table>
 ```
 Under construction...
 ```
+
 <!-- 
 We conducted some preliminary analysis under two settings: (1) zero-shot intent classification (2) few-shot intent classification. In both settings, we curated prompts to accomplish the task. Under few-shot setting, we compared **standard** vs **chain-of-thought (CoT)** prompting. The results are summarized below:
 -->
