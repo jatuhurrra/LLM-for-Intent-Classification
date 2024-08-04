@@ -104,48 +104,48 @@ We conducted experiments with data sizes per intent class of 200, 500, and all a
   <tbody>
     <tr>
       <td>Gemma</td>
-      <td>59</td>
-      <td>44</td>
-      <td>17</td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
+      <td> 39 </td>
+      <td> n/a </td>
+      <td> n/a </td>
+      <td> n/a </td>
+      <td> 44 </td>
+      <td> n/a </td>
+      <td> n/a </td>
+      <td> n/a </td>
+      <td> 44 </td>
+      <td> n/a </td>
+      <td> n/a </td>
+      <td> n/a </td>
     </tr>
     <tr>
       <td>Claude 3 Opus</td>
-      <td>100</td>
-      <td>100</td>
-      <td>98</td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
+      <td> 63 </td>
+      <td> 71 </td>
+      <td> 55 </td>
+      <td> 78 </td>
+      <td> 85 </td>
+      <td> 84 </td>
+      <td> 87 </td>
+      <td> 87 </td>
+      <td> 94 </td>
+      <td> 92 </td>
+      <td> 89 </td>
+      <td> 86 </td>
     </tr>
     <tr>
       <td>GPT 4 Turbo</td>
-      <td>100</td>
-      <td>100</td>
-      <td>100</td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
+      <td> 96 </td>
+      <td> 97 </td>
+      <td> 97 </td>
+      <td> 92 </td>
+      <td> 98 </td>
+      <td> 99 </td>
+      <td> 98 </td>
+      <td> 100 </td>
+      <td> 75 </td>
+      <td> 82 </td>
+      <td> 68 </td>
+      <td> 74 </td>
     </tr>
   </tbody>
 </table>
@@ -180,48 +180,48 @@ We conducted experiments with data sizes per intent class of 200, 500, and all a
   <tbody>
     <tr>
       <td>Gemma</td>
-      <td>59</td>
-      <td>44</td>
-      <td>17</td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
+      <td> 49 </td>
+      <td> n/a </td>
+      <td> n/a </td>
+      <td> n/a </td>
+      <td> 42 </td>
+      <td> n/a </td>
+      <td> n/a </td>
+      <td> n/a </td>
+      <td> 38 </td>
+      <td> n/a </td>
+      <td> n/a </td>
+      <td> n/a </td>
     </tr>
     <tr>
       <td>Claude 3 Opus</td>
-      <td>100</td>
-      <td>100</td>
-      <td>98</td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
+      <td> 99 </td>
+      <td> 96 </td>
+      <td> 98 </td>
+      <td> 98 </td>
+      <td> 94 </td>
+      <td> 95 </td>
+      <td> 98 </td>
+      <td> 96 </td>
+      <td> 85 </td>
+      <td> 80 </td>
+      <td> 88 </td>
+      <td> 82 </td>
     </tr>
     <tr>
       <td>GPT 4 Turbo</td>
-      <td>100</td>
-      <td>100</td>
-      <td>100</td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
+      <td> 98 </td>
+      <td> 97 </td>
+      <td> 97 </td>
+      <td> 99 </td>
+      <td> 95 </td>
+      <td> 95 </td>
+      <td> 98 </td>
+      <td> 91 </td>
+      <td> 87 </td>
+      <td> 92 </td>
+      <td> 79 </td>
+      <td> 84 </td>
     </tr>
   </tbody>
 </table>
@@ -256,48 +256,48 @@ We conducted experiments with data sizes per intent class of 200, 500, and all a
   <tbody>
     <tr>
       <td>Gemma</td>
-      <td>59</td>
-      <td>44</td>
-      <td>17</td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
+      <td> 65 </td>
+      <td> n/a </td>
+      <td> n/a </td>
+      <td> n/a </td>
+      <td> 52 </td>
+      <td> n/a </td>
+      <td> n/a </td>
+      <td> n/a </td>
+      <td> 55 </td>
+      <td> n/a </td>
+      <td> n/a </td>
+      <td> n/a </td>
     </tr>
     <tr>
       <td>Claude 3 Opus</td>
-      <td>100</td>
-      <td>100</td>
-      <td>98</td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
+      <td> 100 </td>
+      <td> 100 </td>
+      <td> 98 </td>
+      <td> 99 </td>
+      <td> 100 </td>
+      <td> 100 </td>
+      <td> 100 </td>
+      <td> 98 </td>
+      <td> 100 </td>
+      <td> 100 </td>
+      <td> 96 </td>
+      <td> 99 </td>
     </tr>
     <tr>
       <td>GPT 4 Turbo</td>
-      <td>100</td>
-      <td>100</td>
-      <td>100</td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
+      <td> 100 </td>
+      <td> 100 </td>
+      <td> 100 </td>
+      <td> 100 </td>
+      <td> 100 </td>
+      <td> 100 </td>
+      <td> 100 </td>
+      <td> 100 </td>
+      <td> 100 </td>
+      <td> 100 </td>
+      <td> 100 </td>
+      <td> 100 </td>
     </tr>
   </tbody>
 </table>
@@ -332,48 +332,48 @@ We conducted experiments with data sizes per intent class of 200, 500, and all a
   <tbody>
     <tr>
       <td>Gemma</td>
-      <td>59</td>
-      <td>44</td>
-      <td>17</td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
+      <td> 77 </td>
+      <td> n/a </td>
+      <td> n/a </td>
+      <td> n/a </td>
+      <td> 61 </td>
+      <td> n/a </td>
+      <td> n/a </td>
+      <td> n/a </td>
+      <td> 59 </td>
+      <td> n/a </td>
+      <td> n/a </td>
+      <td> n/a </td>
     </tr>
     <tr>
       <td>Claude 3 Opus</td>
-      <td>100</td>
-      <td>100</td>
-      <td>98</td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
+      <td> 99 </td>
+      <td> 96 </td>
+      <td> 99 </td>
+      <td> 99 </td>
+      <td> 91 </td>
+      <td> 96 </td>
+      <td> 97 </td>
+      <td> 89 </td>
+      <td> 94 </td>
+      <td> 93 </td>
+      <td> 94 </td>
+      <td> 96 </td>
     </tr>
     <tr>
       <td>GPT 4 Turbo</td>
-      <td>100</td>
-      <td>100</td>
-      <td>100</td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
+      <td> 100 </td>
+      <td> 99 </td>
+      <td> 100 </td>
+      <td> 100 </td>
+      <td> 100 </td>
+      <td> 93 </td>
+      <td> 97 </td>
+      <td> 96 </td>
+      <td> 85 </td>
+      <td> 93 </td>
+      <td> 96 </td>
+      <td> 98 </td>
     </tr>
   </tbody>
 </table>
@@ -408,48 +408,48 @@ We conducted experiments with data sizes per intent class of 200, 500, and all a
   <tbody>
     <tr>
       <td>Gemma</td>
-      <td>59</td>
-      <td>44</td>
-      <td>17</td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
+      <td> 68 </td>
+      <td> n/a </td>
+      <td> n/a </td>
+      <td> n/a </td>
+      <td> 71 </td>
+      <td> n/a </td>
+      <td> n/a </td>
+      <td> n/a </td>
+      <td> 48 </td>
+      <td> n/a </td>
+      <td> n/a </td>
+      <td> n/a </td>
     </tr>
     <tr>
       <td>Claude 3 Opus</td>
-      <td>100</td>
-      <td>100</td>
-      <td>98</td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
+      <td> 99 </td>
+      <td> 95 </td>
+      <td> 95 </td>
+      <td> 96 </td>
+      <td> 97 </td>
+      <td> 95 </td>
+      <td> 94 </td>
+      <td> 97 </td>
+      <td> 92 </td>
+      <td> 93 </td>
+      <td> 95 </td>
+      <td> 97 </td>
     </tr>
     <tr>
       <td>GPT 4 Turbo</td>
-      <td>100</td>
-      <td>100</td>
-      <td>100</td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
+      <td> 98 </td>
+      <td> 97 </td>
+      <td> 99 </td>
+      <td> 99 </td>
+      <td> 99 </td>
+      <td> 98 </td>
+      <td> 96 </td>
+      <td> 97 </td>
+      <td> 94 </td>
+      <td> 96 </td>
+      <td> 93 </td>
+      <td> 95 </td>
     </tr>
   </tbody>
 </table>
@@ -484,48 +484,48 @@ We conducted experiments with data sizes per intent class of 200, 500, and all a
   <tbody>
     <tr>
       <td>Gemma</td>
-      <td>59</td>
-      <td>44</td>
-      <td>17</td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
+      <td> 76 </td>
+      <td> n/a </td>
+      <td> n/a </td>
+      <td> n/a </td>
+      <td> 62 </td>
+      <td> n/a </td>
+      <td> n/a </td>
+      <td> n/a </td>
+      <td> 55 </td>
+      <td> n/a </td>
+      <td> n/a </td>
+      <td> n/a </td>
     </tr>
     <tr>
       <td>Claude 3 Opus</td>
-      <td>100</td>
-      <td>100</td>
-      <td>98</td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
+      <td> 100 </td>
+      <td> 97 </td>
+      <td> 98 </td>
+      <td> 99 </td>
+      <td> 100 </td>
+      <td> 95 </td>
+      <td> 96 </td>
+      <td> 99 </td>
+      <td> 100 </td>
+      <td> 95 </td>
+      <td> 96 </td>
+      <td> 97 </td>
     </tr>
     <tr>
       <td>GPT 4 Turbo</td>
-      <td>100</td>
-      <td>100</td>
-      <td>100</td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
-      <td> -- </td>
+      <td> 99 </td>
+      <td> 97 </td>
+      <td> 92 </td>
+      <td> 99 </td>
+      <td> 99 </td>
+      <td> 99 </td>
+      <td> 98 </td>
+      <td> 91 </td>
+      <td> 100 </td>
+      <td> 95 </td>
+      <td> 97 </td>
+      <td> 92 </td>
     </tr>
   </tbody>
 </table>
