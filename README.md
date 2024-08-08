@@ -1,7 +1,7 @@
 # Large language models (i.e., GPT-4) for Zero-shot Intent Classification in English (En), Swahili (Sw), Japanese (Jp) & Urdu (Ur)
 
 This project explored the potential of deploying large language models (LLMs) such as GPT-4, to perform zero-shot intent classification. 
-By introducing a new dataset of 8,453 sentences across 6 distinct intent classes, namely: **pets, food, job, hobby, sport, drink**; our work made two main contributions. 
+By introducing a new dataset of 8,453 sentences across 6 distinct intent classes, namely: **pet, food, job, hobby, sport, drink**; our work made two main contributions. 
 
 First of all, we demonstrated that LLMs can indeed perform intent classification tasks through prompting. This aligns with the current trend which aims to exploit the power of in-context learning in LLMs, without the need for for additional fine-tuning. 
 
@@ -9,26 +9,32 @@ Secondly, to test our hypothesis, we introduced a unique dataset that was used t
 ### 🤖 🤖    Human-Robot Interaction
 We envision a scenario in which the human and the robot engage in discussion over a wide range of topics. For example:
 
-![Results](/images/ICexampleChat.png)
+<img src="/images/ICexampleChat.png" width="60%" alt="Results">
 
 From the above illustration, we can deduce that the phrase `Cochinita Pibil for sure!` is related to the `intent` called `food` because the human is answering the question `what's your favorite cuisine?` 
 
 ## :card_file_box: The Dataset
 In this dataset, we set out to defer from the conventional norm in which intent classification datasets are constructed.
-For each sentence in the dataset, only a label which identifies the intent label to which the sentence belongs is included. 
+Only a label identifying the intent label to which the sentence belongs is included for each sentence in the dataset. 
 
 **No slot labels are added to the token inside each sentence.**
-Our goal is to investigate if LLM such as Llama-2, GPT-4 can distinguish correctly sentences which belong to different intent categories, with **incontext learning**, i.e., prompting. 
+Our goal is to investigate if LLM, such as Llama-2, GPT-4, Claude 3, etc., can correctly distinguish sentences that belong to different intent categories with **in context learning**, i.e., prompting. 
+We do not conduct fine-tuning on this dataset. Our target domain is human-robot interaction (HRI).
 
-We do not intend to do conduct fine-tuning on this dataset. Our target domain is human-robot interaction (HRI).
+We considered the following intent categories: pet, food, job, hobby, sport, and drink. 
+This repository has one file corresponding to each of these categories.
 
-We considered the following intent categories: pets, food, job, hobby, sport, drink. There is one file corresponding to each of these categories in this repository.
+The data files are provided in two categories.
 
-The data files are:
-
+**Category 1:**
 *HRI_intent_1_pet.csv, HRI_intent_2_food.csv, HRI_intent_3_job.csv, HRI_intent_4_hobby.csv, HRI_intent_5_sport.csv, HRI_intent_6_drink.csv* 
 
-The file named *HRI_TOTAL_data.csv* contains all of the data found in the 6 files *HRI_intent*.csv* 
+The file named *HRI_TOTAL_data.csv* contains all of the data found in the 6 files *HRI_intent_\*.csv* 
+
+**Category 2:**
+On top of that, we have provided more specific data files corresponding to `four languages`; English (En), Japanese (Jp), Swahili (Sw), Urdu (Ur), and `six intent classes` such as `IntentRecognitionData_En_Intent_Sports.csv`
+
+Feel free to use whichever data files you are interested in.
 ## :dizzy: The Data format
 We have provided the data in tabular format with two columns. Column 1 contains the **Sentence** while column 2 contains the **Intent_label**. 
 
@@ -39,7 +45,7 @@ We have provided the data in tabular format with two columns. Column 1 contains 
   </tr>
   <tr>
     <td>Tracey Witch of Ware, was a female English Cocker Spaniel who won the title of Best In Show at Cruft's in both 1948 and 1950.</td>
-    <td>pets</td>
+    <td>pet</td>
   </tr>
   <tr>
     <td>A teller is a person who counts the votes in an election, vote, referendum or poll.</td>
@@ -64,16 +70,162 @@ We have provided the data in tabular format with two columns. Column 1 contains 
 </table>
 
 ## :mechanical_arm: The Prompts are shown below.
-This is an example of one of the prompts which we used.
+Here are the prompts used in the experiments.
+
+#### 1. Zero-shot Standard
+This is our standard prompt under zero-shot settings.
 ```
-Under construction...
+We want to perform an intent classification task. 
+That is, given a sentence, our goal is to predict to which intent class the sentence belongs.
+We have 7 intent classes namely: pet, food, job, hobby, sport, drink, other.
+Each sentence can only belong to one intent class.
+
+Do not include explanations for the answer. 
+Print out only the intent class per sentence. 
+Tell me how many predictions you make in total.
 ```
-The prompt above facilitated our **zero-shot** intent classification analysis.
+
+#### 2. Few-shot Chain-of-Thought (Wei et al.)
+This is the few-shot prompting introduced in the paper <b>Chain-of-thought prompting elicits reasoning in large language models</b>.
+
+```
+We want to perform an intent classification task. 
+That is, given a sentence, our goal is to predict to which intent class the sentence belongs.
+We have 7 intent classes namely: pet, food, job, hobby, sport, drink, other.
+Each sentence can only belong to one intent class.
+
+The intent classes are described as follows:
+pet: this means the sentence contains pets and is talking about pets
+food: this means the sentence contains foods and is talking about foods
+job: this means the sentence contains jobs and is talking about jobs
+hobby: this means the sentence contains hobbies and is talking about hobbies
+sport: this means the sentence contains sports and is talking about sports
+drink: this means the sentence contains drinks and is talking about drinks
+Other: the sentence does not belong to any of the above intent classes
+
+If the sentence belongs to none of the intent classes, that sentence is assigned the intent class "other".
+Classify ALL the sentences in column 1 into one of the 7 intent classes namely: pet, food, job, hobby, sport, drink, other. 
+Do not include explanations for the answer. 
+Print out only the intent class per sentence. 
+Tell me how many predictions you make in total.
+```
+
+#### 3. Zero-shot Chain-of-Thought (Kojima et al.)
+The paper introduced this technique <b>Large language models are zero-shot reasoners</b>.
+
+```
+We want to perform an intent classification task. 
+That is, given a sentence, our goal is to predict to which intent class the sentence belongs.
+We have 7 intent classes namely: pet, food, job, hobby, sport, drink, other.
+Each sentence can only belong to one intent class.
+
+Let’s think step by step.
+
+Print out only the intent class per sentence and do not include explanations for the answer.
+Tell me how many predictions you make in total.
+```
+
+#### 4&5. ExpertPrompting
+Our study uses two ExpertPrompting methods: <b>Expert-General</b> and <b>Expert-Specific</b>.
+ExpertPrompting was introduced in the paper <b>Expertprompting: Instructing large language models to be distinguished experts</b>.
+
+``` 
+[4. Expert-General]
+
+You are an expert that helps people accomplish sophisticated tasks. 
+Please follow the provided instructions and answer the question accordingly. 
+
+We want to perform an intent classification task. 
+That is, given a sentence, our goal is to predict to which intent class the sentence belongs.
+We have 7 intent classes namely: pet, food, job, hobby, sport, drink, other.
+Each sentence can only belong to one intent class.
+If the sentence belongs to none of the intent classes, that sentence is assigned the intent class "other".
+
+Classify ALL the sentences in column 1 into one of the 7 intent classes namely: pet, food, job, hobby, sport, drink, other. 
+Do not include explanations for the answer.  
+Each sentence can only belong to one intent class, so carefully analyze the provided information to determine the most accurate and appropriate response. 
+Print out only the intent class per sentence. 
+
+Tell me how many predictions you make in total.
+Print out the list of answers for downloading. 
+```
+
+And...
+
+``` 
+[5. Expert-Specific]
+As a Social AI Specialist designing a conversational AI for a social robot in a coffee shop setting, analyze user queries to categorize their intent 
+into one of seven categories: pet, food, job, hobby, sport, drink, or other. 
+Consider the user's query itself, the casual social context, sentence structure (open-ended vs. specific), and any social cues (formality, emojis) to 
+identify the main topic (e.g.,  "hey, what are fun puppy tricks?" classified as "pet"). 
+Utilize non-verbal cues (if applicable) and past interactions (if any) for a more nuanced understanding. 
+Classify any queries not fitting the predefined categories as "other." 
+
+Classify ALL the sentences in column 1 into one of the 7 intent classes namely: pet, food, job, hobby, sport, drink, other. 
+Do not include explanations for the answer.  
+Each sentence can only belong to one intent class, so carefully analyze the provided information to determine the most accurate and appropriate response. 
+Print out only the intent class per sentence. 
+
+Tell me how many predictions you make in total.
+Print out the list of answers for downloading. 
+
+```
+
+#### 6. Multi-Persona 
+Introduced in the paper <b>Unleashing the emergent cognitive synergy in large language models: A task-solving agent through multi-persona self-collaboration</b>.
+
+```
+Multi-Persona Prompting for Intent Classification (7 Classes)
+Participants:
+
+AI Assistant (You): A large language model with access to a vast amount of text data and capable of understanding natural language.
+Topic Classifier: An NLP specialist focused on identifying the main subject or theme of a user query.
+Intent Specialist: An expert in understanding the user's goal or desired outcome within a conversation.
+Clarification Specialist: An expert in understanding user intent by asking clarifying questions or analyzing conversational context.
+Profiles:
+
+AI Assistant (You): You can process user queries and identify keywords, but may struggle to determine the user's ultimate goal or the specific topic of interest.
+Topic Classifier: This persona analyzes the query to identify the main subject matter.
+Intent Specialist: This persona analyzes the user's phrasing and context to understand their desired outcome (e.g., information, action, social interaction).
+Clarification Specialist: This persona identifies ambiguities and can ask clarifying questions or consider the surrounding conversation to pinpoint user intent.
+Task: Analyze the following user query and classify its intent into one of the following categories:
+
+Pet: User query relates to pets (e.g., care, training, adoption)
+Food: User query relates to food (e.g., recipes, recommendations, preferences)
+Job: User query relates to jobs (e.g., searching, applications, careers)
+Hobby: User query relates to hobbies (e.g., finding new hobbies, discussing existing hobbies)
+Sport: User query relates to sports (e.g., following teams, playing sports, rules)
+Drink: User query relates to drinks (e.g., recipes, recommendations, preferences)
+Other: User query doesn't fit neatly into the predefined categories.
+Collaboration:
+
+AI Assistant (You): The user asks: "What are some fun tricks I can teach my new puppy?"
+Topic Classifier: This query focuses on "puppy" and "tricks," suggesting the topic is pets.
+Intent Specialist: The user asks about "teaching tricks," indicating they want information on pet training. Their intent is likely Pet.
+Clarification Specialist: While the intent seems clear, we could consider asking, "Are you looking for beginner tricks or more advanced ones?" for further refinement.
+AI Assistant (You): Based on the combined analysis, the user's intent is classified as Pet. We can incorporate the suggestion from the Clarification Specialist to tailor the response further.
+Final Answer:
+
+"Pet" <<
+
+Explanation:
+
+By collaborating with all four personas, you were able to leverage their expertise and achieve accurate intent classification.  The Topic Classifier identified the main subject as pets.  The Intent Specialist confirmed the user's goal as seeking information related to pet training.  The Clarification Specialist offered an optional step for additional refinement.  This multi-faceted approach ensures a robust intent classification system for your dataset.
+
+Note: Remember to adapt the user query and expected intent category throughout your actual application based on your specific dataset.
+
+Each sentence can only belong to one intent class.
+Do not include explanations for the answer. 
+Print out only the intent class per sentence. 
+Tell me how many predictions you make in total.d
+```
+
+The prompts above facilitated our **zero-shot** intent classification analysis.
 ## :sparkles: Evaluation
 We conducted experiments with data sizes per intent class of 200, 500, and all available data. Moreover, we used the three models: Gemma, Claude-3-Opus, and GPT-4-turbo.
-
+<!--
 🚧 **Currently under construction....** 🚧
-
+-->
 <table>
   <caption>
     <b>1. Standard Prompting results for English (En), Japanese (Jp), Swahili (Sw), Urdu (Ur). </b>
@@ -540,6 +692,7 @@ We can deduce that LLMs are capable of zero-shot intent classification. With mor
 -->
 
 ## Citation
+
 Please cite as follows
 ```
 Under construction...
