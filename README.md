@@ -1,12 +1,12 @@
 # Large language models (i.e., GPT-4) for Zero-shot Intent Classification in English (En), Swahili (Sw), Japanese (Jp) & Urdu (Ur)
 
-This project explored the potential of deploying large language models (LLMs) such as GPT-4, to perform zero-shot intent classification. 
-By introducing a new dataset of 8,453 sentences across 6 distinct intent classes, namely: **pet, food, job, hobby, sport, drink**; our work made two main contributions. 
+This project explores the potential of deploying large language models (LLMs) such as GPT-4 for `zero-shot intent recognition`. We demonstrate that LLMs can perform intent classification through prompting. This aligns with the ongoing trend of exploiting the power of `in-context learning` in LLMs without the need for extensive fine-tuning. 
 
-First of all, we demonstrated that LLMs can indeed perform intent classification tasks through prompting. This aligns with the current trend which aims to exploit the power of in-context learning in LLMs, without the need for for additional fine-tuning. 
+To test our hypothesis, we introduce a dataset to explore and analyze zero-shot intent classification further, providing a valuable resource for the research community.
 
-Secondly, to test our hypothesis, we introduced a unique dataset that was used to further explore and analyze zero-shot intent classification, providing a valuable resource for the research community.
-### 🤖 🤖    Human-Robot Interaction
+The dataset consists of 8,453 sentences across 6 distinct intent classes: **pet, food, job, hobby, sport, drink**. 
+
+### 🤖 🤖    Human-Robot Interaction (HRI)
 We envision a scenario in which the human and the robot engage in discussion over a wide range of topics. For example:
 
 <img src="/images/ICexampleChat.png" width="60%" alt="Results">
@@ -15,10 +15,10 @@ From the above illustration, we can deduce that the phrase `Cochinita Pibil for 
 
 ## :card_file_box: The Dataset
 In this dataset, we set out to defer from the conventional norm in which intent classification datasets are constructed.
-Only a label identifying the intent label to which the sentence belongs is included for each sentence in the dataset. 
+For each sentence in the dataset, only a label identifying the intent label to which the sentence belongs is included. 
 
 **No slot labels are added to the token inside each sentence.**
-Our goal is to investigate if LLM, such as Llama-2, GPT-4, Claude 3, etc., can correctly distinguish sentences that belong to different intent categories with **in context learning**, i.e., prompting. 
+We aim to investigate if LLMs, such as Llama-2, GPT-4, Claude 3, etc., can correctly distinguish sentences that belong to different intent categories with **in context learning**, i.e., prompting. 
 We do not conduct fine-tuning on this dataset. Our target domain is human-robot interaction (HRI).
 
 We considered the following intent categories: pet, food, job, hobby, sport, and drink. 
