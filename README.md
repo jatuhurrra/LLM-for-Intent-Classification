@@ -222,7 +222,7 @@ Tell me how many predictions you make in total.d
 
 The prompts above facilitated our **zero-shot** intent classification analysis.
 ## :sparkles: Evaluation
-We conducted experiments with data sizes per intent class of 200, 500, and all available data. Moreover, we used the three models: Gemma, Claude-3-Opus, and GPT-4-turbo.
+We conducted experiments with data sizes per intent class of `200`, `500`, and `all data`. Moreover, we used the three models: `Gemma`, `Claude-3-Opus`, and `GPT-4-turbo`.
 <!--
 🚧 **Currently under construction....** 🚧
 -->
