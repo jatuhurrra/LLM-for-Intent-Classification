@@ -34,7 +34,7 @@ The file named *HRI_TOTAL_data.csv* contains all of the data found in the 6 file
 **Category 2:**
 On top of that, we have provided more specific data files corresponding to `four languages`; English (En), Japanese (Jp), Swahili (Sw), Urdu (Ur), and `six intent classes` such as `IntentRecognitionData_En_Intent_Sports.csv`
 
-Feel free to use whichever data files you are interested in.
+Feel free to use whichever data files you are interested in, from the `./data/` folder.
 ## :dizzy: The Data format
 We have provided the data in tabular format with two columns. Column 1 contains the **Sentence** while column 2 contains the **Intent_label**. 
 
