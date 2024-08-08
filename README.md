@@ -1,4 +1,4 @@
-# Large language models (i.e., GPT-4) for Zero-shot Intent Classification in English (En), Swahili (Sw), Japanese (Jp) & Urdu (Ur)
+# Large language models (i.e., GPT-4) for Zero-shot Intent Classification in English (En), Japanese (Jp), Swahili (Sw) & Urdu (Ur)
 
 This project explores the potential of deploying large language models (LLMs) such as GPT-4 for `zero-shot intent recognition`. We demonstrate that LLMs can perform intent classification through prompting. This aligns with the ongoing trend of exploiting the power of `in-context learning` in LLMs without the need for extensive fine-tuning. 
 
