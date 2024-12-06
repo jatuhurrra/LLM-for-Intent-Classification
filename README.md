@@ -694,6 +694,11 @@ We can deduce that LLMs are capable of zero-shot intent classification. With mor
 ## Citation
 
 Please cite as follows
-```
-Under construction...
-```
+```bibtex
+        @inproceedings{inproceedings,
+        author = {Atuhurra, Jesse},
+        year = {2024},
+        month = {06},
+        pages = {},
+        title = {Zero-shot Retrieval of User Intent in Human-Robot Interaction with Large Language Models}
+    }
