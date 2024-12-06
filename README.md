@@ -699,6 +699,5 @@ Please cite as follows
         author = {Atuhurra, Jesse},
         year = {2024},
         month = {06},
-        pages = {},
         title = {Zero-shot Retrieval of User Intent in Human-Robot Interaction with Large Language Models}
     }
